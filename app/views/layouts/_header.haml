@@ -1,0 +1,11 @@
+%header
+  .navbar-fixed
+    %nav
+      .nav-wrapper
+        = link_to("#", "data-target": "mobile-demo", class: "sidenav-trigger") do
+          %i.material-icons menu
+        = link_to(root_path, class: "brand-logo center") do
+          = image_tag("logo.png", class: "logo")
+
+    %ul#mobile-demo.sidenav
+      %li= link_to("Accueil", root_path)
