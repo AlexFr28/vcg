@@ -1,11 +1,13 @@
 !!!
-%html
+%html{lang: "fr", "xml:lang": "fr", xmlns: "http://www.w3.org/1999/xhtml"}
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title WebApp
+    %meta{content: "text/html; charset=UTF-8", "http-equiv": "Content-Type"}
+    %meta{name: "viewport", content: "width=device-width"}
+    %title Vélo club grangeois
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag(*@stylesheets)
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     = render 'layouts/header'
     = yield
