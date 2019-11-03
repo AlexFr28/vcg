@@ -2,4 +2,19 @@ nav {
   background-color: white;
   border-bottom: 10px solid $club-jaune;
   height: 75px;
+
+  @media #{$medium-and-down} {
+    .brand-logo {
+      left: 120px !important;
+
+      .logo {
+        max-height: 65px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  a {
+    color: black;
+  }
 }
